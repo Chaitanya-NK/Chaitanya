@@ -9,7 +9,7 @@ export const experiences = [
     id: 2,
     title: "Full Stack Developer",
     company: "Tek Soft Labs",
-    duration: "(July 2022 - August 2023)"
+    duration: "(July 2023 - August 2023)"
   },
   {
     id: 3,
