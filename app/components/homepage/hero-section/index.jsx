@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 
@@ -59,6 +59,13 @@ function HeroSection() {
                 size={30}
               />
             </Link>
+            <Link target="_blank" href="https://api.whatsapp.com/send?phone=919704671582&text=Hello,%20more%20information!">
+              <FaWhatsapp
+                className="transition-all text-pink-500 hover:scale-125 duration-300"
+                size={30}
+              />
+            </Link>
+
           </div>
 
           <div className="flex items-center gap-3">
