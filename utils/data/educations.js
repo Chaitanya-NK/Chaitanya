@@ -7,7 +7,7 @@ export const educations = [
   },
   {
     id: 2,
-    title: "Intermediate MPC",
+    title: "Intermediate (MPC)",
     duration: "2017 - 2019",
     institution: "Sri Chaitanya Junior College, Visakhapatnam",
   },
