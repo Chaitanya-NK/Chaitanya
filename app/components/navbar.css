@@ -1,0 +1,30 @@
+.sliding-txt-container {
+    width: 100%;
+    /* Ensures the container spans the full width */
+    overflow: hidden;
+    /* Hides text outside the visible area */
+    white-space: nowrap;
+    /* Keeps the text in one line */
+}
+
+.sliding-txt {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    color: #16f2b3;
+    font-weight: bold;
+    animation: slide-left 20s linear infinite;
+    /* Animate the text */
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(100%);
+        /* Start from the right */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* End outside to the left */
+    }
+}
