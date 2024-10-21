@@ -2,7 +2,7 @@
 
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
-
+import { skillsData } from "@/utils/data/skills";
 
 function AboutSection() {
   return (
@@ -21,6 +21,16 @@ function AboutSection() {
           <p className="text-gray-200 text-sm lg:text-lg text-justify">
             {personalData.description}
           </p>
+          <div className="mt-5 flex flex-wrap gap-2">
+            {skillsData.map((skill, index) => (
+              <div
+                key={index}
+                className="bg-[#1a1443] text-white py-1 px-3 rounded-full text-sm"
+              >
+                {skill}
+              </div>
+            ))}
+          </div>
         </div>
         <div className="flex justify-center order-1 lg:order-2">
           <Image
