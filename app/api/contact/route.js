@@ -1,3 +1,4 @@
+import { environmentVariables } from '@/utils/environment';
 import axios from 'axios';
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
@@ -9,8 +10,8 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false, 
   auth: {
-    user: process.env.EMAIL_ADDRESS,
-    pass: process.env.GMAIL_PASSKEY, 
+    user: environmentVariables.EMAIL_ADDRESS,
+    pass: environmentVariables.GMAIL_PASSKEY, 
   },
 });
 
@@ -51,7 +52,7 @@ async function sendEmail(payload, message) {
   
   const mailOptions = {
     from: "Portfolio", 
-    to: process.env.EMAIL_ADDRESS, 
+    to: environmentVariables.EMAIL_ADDRESS, 
     subject: `New Message From ${name}`, 
     text: message, 
     html: generateEmailTemplate(name, email, userMessage), 
@@ -71,8 +72,8 @@ export async function POST(request) {
   try {
     const payload = await request.json();
     const { name, email, message: userMessage } = payload;
-    const token = process.env.TELEGRAM_BOT_TOKEN;
-    const chat_id = process.env.TELEGRAM_CHAT_ID;
+    const token = environmentVariables.TELEGRAM_BOT_TOKEN;
+    const chat_id = environmentVariables.TELEGRAM_CHAT_ID;
 
     // Validate environment variables
     if (!token || !chat_id) {
