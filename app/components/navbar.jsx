@@ -16,7 +16,7 @@ function Navbar() {
         </div>
         <div className="sliding-txt-container">
           <p className="sliding-txt">
-            .NET Full Stack Developer | MERN/MEAN Stack Developer | Android App Developer | C and Python Programmer | Data Science Enthusiast
+            Release Engineer | .NET Full Stack Developer | MERN/MEAN Stack Developer | Android App Developer | C and Python Programmer | Data Science Enthusiast
           </p>
         </div>
       </div>
