@@ -27,7 +27,7 @@ import typescript from '/public/svg/skills/typescript.svg';
 import dotnet from '/public/svg/skills/dotnet.svg';
 import devops from '/public/svg/skills/devops.svg';
 import shell from '/public/svg/skills/shell.svg';
-import appsscript from '/public/svg/skills/apps_script';
+import appsscript from '/public/svg/skills/apps_script.svg';
 
 export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
