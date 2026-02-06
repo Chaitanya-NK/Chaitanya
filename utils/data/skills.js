@@ -18,7 +18,8 @@ export const skillsData = [
   'MaterialUI',
   'Devops',
   'Shell',
-  'Python'
+  'Python',
+  'AppsScript'
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.
