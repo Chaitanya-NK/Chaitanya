@@ -27,6 +27,7 @@ import typescript from '/public/svg/skills/typescript.svg';
 import dotnet from '/public/svg/skills/dotnet.svg';
 import devops from '/public/svg/skills/devops.svg';
 import shell from '/public/svg/skills/shell.svg';
+import appsscript from '/public/svg/skills/apps_script';
 
 export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
@@ -89,6 +90,8 @@ export const skillsImage = (skill) => {
       return devops;
     case 'shell':
       return shell;
+    case 'appsscript':
+      return appsscript;
     default:
       break;
   }
